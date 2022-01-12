@@ -93,26 +93,29 @@ function Home() {
 
         <h2>All my notes</h2>
         <h3>Click to display notes for a given date</h3>
-        {notes === ""
-          ? ""
-          : notes.map((note) => {
-              console.log(note);
-              return (
-                <div
-                  key={note._id}
-                  style={{
-                    backgroundColor: "#0a2332",
-                    color:'white',
-                    marginBottom: "20px",
-                    padding: "10px",
-                    width: "200px",
-                  }}
-                >
-                  <NoteDate key={note._id} noteDate={note.date} />
-                  {/* <br /> */}
-                </div>
-              );
-            })}
+
+        <div style={{ display: "flex" }}>
+          {notes === ""
+            ? ""
+            : notes.map((note) => {
+                console.log(note);
+                return (
+                  <div
+                    key={note._id}
+                    style={{
+                      backgroundColor: "#0a2332",
+                      color: "white",
+                      marginBottom: "20px",
+                      padding: "10px",
+                      width: "200px",
+                    }}
+                  >
+                    <NoteDate key={note._id} noteDate={note.date} />
+                    {/* <br /> */}
+                  </div>
+                );
+              })}
+        </div>
       </form>
     </div>
   );
