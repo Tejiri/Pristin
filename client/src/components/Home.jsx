@@ -92,7 +92,7 @@ function Home() {
         <input type="submit" value="Add note" />
 
         <h2>All my notes</h2>
-        <h3>Click to display note</h3>
+        <h3>Click to display notes for a given date</h3>
         {notes === ""
           ? ""
           : notes.map((note) => {
