@@ -106,7 +106,7 @@ function Home() {
                       backgroundColor: "#0a2332",
                       color: "white",
                       marginBottom: "20px",
-                      padding: "10px",
+                      padding: "10px 20px",
                       width: "200px",
                     }}
                   >
