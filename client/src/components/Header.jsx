@@ -7,7 +7,7 @@ function Header() {
       style={{
         display: "flex",
         justifyContent: "space-between",
-        backgroundColor: "burlywood",
+        backgroundColor: "#02b3ad",
         placeItems: "center",
         padding:'20px'
       }}

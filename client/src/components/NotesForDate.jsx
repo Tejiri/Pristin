@@ -25,7 +25,8 @@ function NotesForDate({ match }) {
               return (
                 <div
                   style={{
-                    backgroundColor: "grey",
+                    backgroundColor: "#0a2332",
+                    color:'white',
                     padding: "10px",
                     width: "150px",
                     margin: "20px",

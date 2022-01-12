@@ -101,7 +101,8 @@ function Home() {
                 <div
                   key={note._id}
                   style={{
-                    backgroundColor: "burlywood",
+                    backgroundColor: "#0a2332",
+                    color:'white',
                     marginBottom: "20px",
                     padding: "10px",
                     width: "200px",
