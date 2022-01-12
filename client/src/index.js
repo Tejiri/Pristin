@@ -15,10 +15,7 @@ import NotesForDate from "./components/NotesForDate";
 
 ReactDOM.render(
   <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/note/:notedate" element={<NotesForDate />} />
-    </Routes>
+  <App/>
   </BrowserRouter>,
   document.getElementById("root")
 );

@@ -1,11 +1,14 @@
 import Home from "./components/Home";
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+import NotesForDate from "./components/NotesForDate";
 
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/note/:notedate" element={<NotesForDate />} />
+    </Routes>
   );
 }
 
