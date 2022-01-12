@@ -2,7 +2,7 @@ const express = require("express");
 const routes = require("./routes/routes");
 const mongoose = require("mongoose");
 const app = express();
-const port = 8080 || process.env.PORT;
+const port = process.env.PORT || 8080;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -16,7 +16,7 @@ mongoose.connect(
   }
 );
 
-if (process.env.NODE_ENV === "productioon") {
+if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
