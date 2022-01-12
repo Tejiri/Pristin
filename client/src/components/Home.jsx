@@ -94,7 +94,7 @@ function Home() {
         <h2>All my notes</h2>
         <h3>Click to display notes for a given date</h3>
 
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", flexWrap:'wrap' }}>
           {notes === ""
             ? ""
             : notes.map((note) => {
